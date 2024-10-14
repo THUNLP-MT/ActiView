@@ -8,7 +8,7 @@ Coming soon ⏳🔜
 ## Project Overview
 This repository contains all the necessary materials, including:
 - **Datasets** for active perception evaluation
-- **Source code** for model evaluation
+- **Toolkits** for model evaluation
 - **Results** and analysis from the paper
 
 
