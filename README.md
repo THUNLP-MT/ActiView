@@ -1,5 +1,5 @@
 # ActiView: Evaluating Active Perception Ability for Multimodal Large Language Models
-[**🌐 Homepage**]([https://thunlp-mt.github.io/Brote/](https://wangphoebe.github.io/actiview_homepage/) | [**📖 arXiv**](https://arxiv.org/pdf/2410.04659.pdf) 
+[**🌐 Homepage**](https://wangphoebe.github.io/actiview_homepage/)| [**📖 arXiv**](https://arxiv.org/pdf/2410.04659.pdf) 
 
 Coming soon ⏳🔜
 
