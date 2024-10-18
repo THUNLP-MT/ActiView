@@ -25,7 +25,7 @@ This repository contains all the necessary materials, including:
 
 ### Results of Zooming and Shifting Pipelines
 
-The evaluation of active perception abilities on our benchmark, including zooming, and shifting. "Model AVG": average scores of column "Zooming", "Shifting-R", "Shifting-E", "Shifting-M", and "Shifting-H". The best scores of each column are bolded, and the best scores in each model types are <u>underlined</u>.
+The evaluation of active perception abilities on our benchmark, including zooming, and shifting. "Model AVG": average scores of column "Zooming", "Shifting-R", "Shifting-E", "Shifting-M", and "Shifting-H". The best scores of each column are bolded, and the best scores in each model types are **underlined**.
 
 #### Proprietary Models
 
@@ -39,11 +39,11 @@ The evaluation of active perception abilities on our benchmark, including zoomin
 
 | Models                  | Full Image | Zooming | Single View | Shifting-R | Shifting-E | Shifting-M | Shifting-H | Model AVG |
 |-------------------------|------------|---------|-------------|------------|------------|------------|------------|-----------|
-| Qwen2-VL                | 63.08      | 64.62   | 54.46       | 61.23      | <u>62.77</u>| <u>64.31</u>| <u>61.85</u>| <u>62.96</u>|
-| Idefics3-8B-Llama3       | 59.08      | 58.15   | 53.23       | <u>61.85</u>| 59.38      | 59.69      | 60.31      | 59.88     |
+| Qwen2-VL                | 63.08      | 64.62   | 54.46       | 61.23      |  **62.77** |  **64.31** |  **61.85** | **62.96** |
+| Idefics3-8B-Llama3       | 59.08      | 58.15   | 53.23       | **61.85** | 59.38      | 59.69      | 60.31      | 59.88     |
 | MiniCPM-V 2.6           | 64.62      | 61.85   | 54.46       | 54.77      | 61.23      | 58.15      | 55.69      | 58.34     |
 | mPLUG-Owl3              | 62.46      | 60.92   | 54.15       | 51.69      | 56.31      | 55.69      | 53.54      | 55.63     |
-| LLaVA-OneVision         | <u>64.92</u>| <u>65.23</u>| <u>56.92</u>| 53.54      | 57.23      | 52.31      | 48.62      | 55.39     |
+| LLaVA-OneVision         | **64.92** | **65.23**|  **56.92**  | 53.54      | 57.23      | 52.31      | 48.62      | 55.39     |
 | InternVL2-8B            | 58.15      | 56.00   | 45.85       | 54.77      | 59.70      | 53.23      | 52.00      | 55.14     |
 | Mantis                  | 59.08      | 60.62   | 52.92       | 52.92      | 55.38      | 52.92      | 52.31      | 54.83     |
 | Idefics2-8B             | 61.85      | 61.85   | 55.69       | 53.23      | 56.92      | 51.69      | 49.23      | 54.58     |
@@ -57,10 +57,10 @@ The evaluation of active perception abilities on our benchmark, including zoomin
 
 | Models                  | Full Image | Zooming | Single View | Shifting-R | Shifting-E | Shifting-M | Shifting-H | Model AVG |
 |-------------------------|------------|---------|-------------|------------|------------|------------|------------|-----------|
-| MiniCPM-Llama3-V-2.5    | 63.87      | 61.25   | <u>54.47</u>| <u>60.92</u>| 60.31      | <u>59.38</u>| <u>58.46</u>| <u>60.06</u>|
-| GLM-4V-9B               | <u>67.08</u>| 56.92   | 53.85       | 56.92      | <u>60.62</u>| 56.00      | 52.92      | 56.68     |
+| MiniCPM-Llama3-V-2.5    | 63.87      | 61.25   | **54.47**| **60.92**| 60.31      | **59.38**| **58.46**| **60.06**|
+| GLM-4V-9B               | **67.08**| 56.92   | 53.85       | 56.92      | **60.62**| 56.00      | 52.92      | 56.68     |
 | InternVL-Vicuna-13B     | 56.92      | 62.77   | 52.31       | 53.85      | 52.92      | 52.92      | 51.08      | 54.71     |
-| LLaVA-1.6 7B            | 55.08      | <u>68.92</u> 50.15       | 51.69      | 52.31      | 49.23      | 48.00      | 54.03     |
+| LLaVA-1.6 7B            | 55.08      | **68.92**| 50.15       | 51.69      | 52.31      | 49.23      | 48.00      | 54.03     |
 | InternVL-Vicuna-7B      | 55.38      | 65.23   | 51.70       | 52.92      | 51.38      | 50.77      | 48.62      | 53.78     |
 | LLaVA-1.6 13B           | 56.92      | 65.23   | 52.31       | 45.85      | 55.08      | 52.62      | 48.92      | 53.54     |
 | InternVL-Vicuna-13B-448px| 50.46      | 57.85   | 45.54       | 48.31      | 48.31      | 48.92      | 48.92      | 50.46     |
@@ -76,8 +76,8 @@ The evaluation of active perception abilities on our benchmark, including zoomin
 |   Models   | ACC       | #zoom | #shift | #view | 
 |------------|-----------|-------|--------|-------|
 |   GPT-4o   | **69.54** | 1.61  | 1.23   | 1.35  | 
-|  Qwen2-VL  | <u>65.54</u>| 2.51  | 2.17   | 2.12  | 
-|MiniCPM-V 2.6|  64.00  |  1.31  | 0.39   | 0.94  |
+|  Qwen2-VL  |   65.54   | 2.51  | 2.17   | 2.12  | 
+|MiniCPM-V 2.6|  64.00   | 1.31  | 0.39   | 0.94  |
 | mPLUG-Owl3 |   59.69   | 2.59  | 1.49   | 1.43  |
 |  Idefics3  |   62.15   | 1.16  | 0.59   | 0.58  |
 
