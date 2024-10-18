@@ -71,16 +71,14 @@ The evaluation of active perception abilities on our benchmark, including zoomin
 
 ### Results of Mixed Pipeline for Multi-Image Models
 
-**ACC**: accuracy.  
-**\#zoom**: average zooming operations.  
-**\#shift**: average shifting operations.  
-**\#view**: average used views.
+**ACC**: accuracy; **\#zoom**: average zooming operations; **\#shift**: average shifting operations; **\#view**: average used views.
 
-| ACC       | #zoom | #shift | #view | ACC       | #zoom | #shift | #view | ACC       | #zoom | #shift | #view | ACC       | #zoom | #shift | #view | ACC       | #zoom | #shift | #view |
-|-----------|-------|--------|-------|-----------|-------|--------|-------|-----------|-------|--------|-------|-----------|-------|--------|-------|-----------|-------|--------|-------|
-| **GPT-4o** |       |        |       | **Qwen2-VL** |       |        |       | **MiniCPM-V 2.6** |       |        |       | **mPLUG-Owl3** |       |        |       | **Idefics3** |       |        |       |
-| **69.54** | 1.61  | 1.23   | 1.35  | **65.54** | 2.51  | 2.17   | 2.12  | **64.00** | 1.31  | 0.39   | 0.94  | **59.69** | 2.59  | 1.49   | 1.43  | **62.15** | 1.16  | 0.59   | 0.58  |
-
+|   Models   | ACC       | #zoom | #shift | #view | 
+|   GPT-4o   | **69.54** | 1.61  | 1.23   | 1.35  | 
+|  Qwen2-VL  | <u>65.54</u>| 2.51  | 2.17   | 2.12  | 
+|MiniCPM-V 2.6|  64.00  |  1.31  | 0.39   | 0.94  |
+| mPLUG-Owl3 |   59.69   | 2.59  | 1.49   | 1.43  |
+|  Idefics3  |   62.15   | 1.16  | 0.59   | 0.58  |
 
 ## Citation
 If you find our project useful, please consider citing:
