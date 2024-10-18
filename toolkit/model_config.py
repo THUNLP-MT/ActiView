@@ -4,16 +4,16 @@ import transformers
 """
 Configuration of  model path
 """
-model_mapper = {'idefics': '/yeesuanAI05/thumt/dyr/idefics/weights/idefics2-8b',
-            'idefics3': '/yeesuanAI05/thumt/zyq/models/ckpts/Idefics3-8B-Llama3',
+model_mapper = {'idefics': 'idefics2-8b',
+            'idefics3': 'Idefics3-8B-Llama3',
             'llavanext': 'lmms-lab/llava-next-interleave-qwen-7b',
-            'llavaonevision': '/yeesuanAI05/thumt/zyq/models/ckpts/llava-onevision-qwen2-7b-ov',
+            'llavaonevision': 'llava-onevision-qwen2-7b-ov',
             'mantis': 'TIGER-Lab/Mantis-8B-Idefics2',
-            'minicpmv2.5':'/yeesuanAI05/thumt/cc/EMNLP2024/ActView/MiniCPM-Llama3-V-2_5',
-            'minicpmv2.6':'/yeesuanAI05/thumt/zyq/models/ckpts/MiniCPM-V-2_6',
-            'mplugowl3': '/yeesuanAI05/thumt/dyr/mplug_owl3/mplug_owl3',
+            'minicpmv2.5':'MiniCPM-Llama3-V-2_5',
+            'minicpmv2.6':'MiniCPM-V-2_6',
+            'mplugowl3': 'mplug_owl3',
             'mplugowl2': 'mplug-owl2-llama2-7b',
-            'qwen2vl': '/yeesuanAI05/thumt/wzh/huggingface_cache/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f',
+            'qwen2vl': 'Qwen2-VL-7B-Instruct',
             'slime8b': ''}
 
 #################################
@@ -48,7 +48,6 @@ def load_model(model_path, model_scale, processpor_path, model_name='Brote'):
 
         elif model_name == 'minicpmv2.6':
             from pathlib import Path
-            mini_cpm_path = Path('/yeesuanAI05/thumt/zyq/models/ckpts/MiniCPM-V-2_6')
             sys.path.append(str(mini_cpm_path))
             from transformers import AutoModel, AutoTokenizer
 
@@ -58,7 +57,6 @@ def load_model(model_path, model_scale, processpor_path, model_name='Brote'):
             generation_kwargs = {'tokenizer': tokenizer}
 
         elif model_name == 'minicpmv2.5':
-            mini_cpm_path = Path('/yeesuanAI05/thumt/cc/EMNLP2024/ActView/MiniCPM-V')
             sys.path.append(str(mini_cpm_path))
             from chat import MiniCPMVChat
 
@@ -107,19 +105,18 @@ def load_model(model_path, model_scale, processpor_path, model_name='Brote'):
                 "do_sample": False}
         return model.eval(), processor, generation_kwargs
 
-    brote_root = '/yeesuanAI05/thumt/wzy'
     if model_scale == 'xxl':
         if model_name == 'MMICL':
-            model_ckpt = brote_root+'/models/models--BleachNick--MMICL-Instructblip-T5-xxl/snapshots/ed4ddb6c60ff260c3c03ff149b7e91ce3496690e'
+            model_ckpt = ""    
         else:
-            model_ckpt = brote_root+'/MMICL/MIC-master/checkpoints/stage2/stage2_dual_zero1_from_xxl_drop_both_zero1_fromstage1GPTv02_1e-5/checkpoint-26000'
-        processor_ckpt = brote_root+'/models/models--Salesforce--instructblip-flan-t5-xxl/snapshots/1a621c99c4ac000b7a4be30f78cd51040160cdc2'
+            model_ckpt = ""    
+        processor_ckpt = ""
     else:
         if model_name == 'MMICL':
-            model_ckpt = brote_root+'/models/models--BleachNick--MMICL-Instructblip-T5-xl/snapshots/e69bb69576174050a701fc6368cf7f26e1db4232'
+            model_ckpt = brote_root+''
         else:
-            model_ckpt = brote_root+'/MMICL/MIC-master/checkpoints/stage2/stage2_dual_nodrop_from_xl_drop_both_zero1_fromstage1GPTv02_1gpu/checkpoint-3600'
-        processor_ckpt = brote_root+'/models/models--Salesforce--instructblip-flan-t5-xl/snapshots/6c0cf6bef6330a114473cb5cec43d7beeb2a74ac'
+            model_ckpt = brote_root+''
+        processor_ckpt = brote_root+''
     
     sys.path.append(brote_root+'/MMICL/MIC-master')
     if not 'MMICL' in  model_ckpt:
