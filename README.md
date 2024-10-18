@@ -21,6 +21,67 @@ This repository contains all the necessary materials, including:
 - **Toolkits** for model evaluation
 - **Results** and analysis from the paper
 
+## Leaderboard
+
+### Results of Zooming and Shifting Pipelines
+
+The evaluation of active perception abilities on our benchmark, including zooming, and shifting. "Model AVG": average scores of column "Zooming", "Shifting-R", "Shifting-E", "Shifting-M", and "Shifting-H". The best scores of each column are bolded, and the best scores in each model types are <u>underlined</u>.
+
+#### Proprietary Models
+
+| Models            | Full Image | Zooming | Single View | Shifting-R | Shifting-E | Shifting-M | Shifting-H | Model AVG |
+|-------------------|------------|---------|-------------|------------|------------|------------|------------|-----------|
+| Gemini-1.5-pro | **73.85**  | **72.31**| 58.15       | **67.08**  | **67.38**  | **65.54**  | **67.69**  | **68.00** |
+| GPT-4o            | 67.38      | 68.62   | **61.23**   | 67.08      | 66.77      | 65.23      | 64.31      | 66.40     |
+| Claude 3.5 Sonnet | 72.92      | 71.69   | 54.46       | 65.23      | 66.15      | 60.31      | 61.85      | 65.05     |
+
+#### Open-source Models for Multiple Images as Input
+
+| Models                  | Full Image | Zooming | Single View | Shifting-R | Shifting-E | Shifting-M | Shifting-H | Model AVG |
+|-------------------------|------------|---------|-------------|------------|------------|------------|------------|-----------|
+| Qwen2-VL                | 63.08      | 64.62   | 54.46       | 61.23      | <u>62.77</u>| <u>64.31</u>| <u>61.85</u>| <u>62.96</u>|
+| Idefics3-8B-Llama3       | 59.08      | 58.15   | 53.23       | <u>61.85</u>| 59.38      | 59.69      | 60.31      | 59.88     |
+| MiniCPM-V 2.6           | 64.62      | 61.85   | 54.46       | 54.77      | 61.23      | 58.15      | 55.69      | 58.34     |
+| mPLUG-Owl3              | 62.46      | 60.92   | 54.15       | 51.69      | 56.31      | 55.69      | 53.54      | 55.63     |
+| LLaVA-OneVision         | <u>64.92</u>| <u>65.23</u>| <u>56.92</u>| 53.54      | 57.23      | 52.31      | 48.62      | 55.39     |
+| InternVL2-8B            | 58.15      | 56.00   | 45.85       | 54.77      | 59.70      | 53.23      | 52.00      | 55.14     |
+| Mantis                  | 59.08      | 60.62   | 52.92       | 52.92      | 55.38      | 52.92      | 52.31      | 54.83     |
+| Idefics2-8B             | 61.85      | 61.85   | 55.69       | 53.23      | 56.92      | 51.69      | 49.23      | 54.58     |
+| Brote-IM-XL-3B          | 54.77      | 54.46   | 55.69       | 51.38      | 51.08      | 52.62      | 47.69      | 51.45     |
+| Idefics2-8B-base        | 52.62      | 48.62   | 47.69       | 49.54      | 50.77      | 47.69      | 47.69      | 48.86     |
+| Brote-IM-XXL-11B        | 53.85      | 54.77   | 49.23       | 49.85      | 50.77      | 44.92      | 43.69      | 48.80     |
+| MMICL-XXL-11B           | 51.69      | 49.54   | 50.15       | 49.85      | 49.85      | 46.77      | 45.54      | 48.31     |
+| MMICL-XL-3B             | 49.85      | 49.85   | 44.31       | 44.92      | 48.92      | 45.85      | 44.31      | 46.77     |
+
+#### Open-source Models for Single Image as Input
+
+| Models                  | Full Image | Zooming | Single View | Shifting-R | Shifting-E | Shifting-M | Shifting-H | Model AVG |
+|-------------------------|------------|---------|-------------|------------|------------|------------|------------|-----------|
+| MiniCPM-Llama3-V-2.5    | 63.87      | 61.25   | <u>54.47</u>| <u>60.92</u>| 60.31      | <u>59.38</u>| <u>58.46</u>| <u>60.06</u>|
+| GLM-4V-9B               | <u>67.08</u>| 56.92   | 53.85       | 56.92      | <u>60.62</u>| 56.00      | 52.92      | 56.68     |
+| InternVL-Vicuna-13B     | 56.92      | 62.77   | 52.31       | 53.85      | 52.92      | 52.92      | 51.08      | 54.71     |
+| LLaVA-1.6 7B            | 55.08      | <u>68.92</u> 50.15       | 51.69      | 52.31      | 49.23      | 48.00      | 54.03     |
+| InternVL-Vicuna-7B      | 55.38      | 65.23   | 51.70       | 52.92      | 51.38      | 50.77      | 48.62      | 53.78     |
+| LLaVA-1.6 13B           | 56.92      | 65.23   | 52.31       | 45.85      | 55.08      | 52.62      | 48.92      | 53.54     |
+| InternVL-Vicuna-13B-448px| 50.46      | 57.85   | 45.54       | 48.31      | 48.31      | 48.92      | 48.92      | 50.46     |
+| mPLUG-Owl2-7B           | 55.08      | 55.38   | 52.00       | 47.38      | 46.46      | 46.46      | 46.15      | 48.37     |
+| Mini-Gemini-7B-HD       | 55.69      | 34.77   | 51.70       | 48.62      | 48.00      | 47.69      | 50.15      | 45.85     |
+| SEAL                    | 48.31      | 54.77   | 42.77       | 42.15      | 42.77      | 40.02      | 40.62      | 44.07     |
+| Mini-Gemini-7B          | 47.08      | 17.85   | 47.38       | 39.38      | 38.15      | 38.15      | 36.00      | 33.91     |
+
+### Results of Mixed Pipeline for Multi-Image Models
+
+**ACC**: accuracy.  
+**\#zoom**: average zooming operations.  
+**\#shift**: average shifting operations.  
+**\#view**: average used views.
+
+| ACC       | #zoom | #shift | #view | ACC       | #zoom | #shift | #view | ACC       | #zoom | #shift | #view | ACC       | #zoom | #shift | #view | ACC       | #zoom | #shift | #view |
+|-----------|-------|--------|-------|-----------|-------|--------|-------|-----------|-------|--------|-------|-----------|-------|--------|-------|-----------|-------|--------|-------|
+| **GPT-4o** |       |        |       | **Qwen2-VL** |       |        |       | **MiniCPM-V 2.6** |       |        |       | **mPLUG-Owl3** |       |        |       | **Idefics3** |       |        |       |
+| **69.54** | 1.61  | 1.23   | 1.35  | **65.54** | 2.51  | 2.17   | 2.12  | **64.00** | 1.31  | 0.39   | 0.94  | **59.69** | 2.59  | 1.49   | 1.43  | **62.15** | 1.16  | 0.59   | 0.58  |
+
+
 ## Citation
 If you find our project useful, please consider citing:
 ```
