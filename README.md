@@ -8,7 +8,9 @@ Coming soon ⏳🔜
 - 📨 If you have any questions regarding the data and evaluation scripts when they are temporarily unavailable, please contact [w.ziyue1010@gmail.com](mailto:w.ziyue1010@gmail.com).
   
 ## Timeline
+
 📢 [2024-10-14] Homepage released.
+
 📢 [2024-10-07] Paper and repo released.  
 
 ## Project Overview
