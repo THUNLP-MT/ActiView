@@ -74,6 +74,7 @@ The evaluation of active perception abilities on our benchmark, including zoomin
 **ACC**: accuracy; **\#zoom**: average zooming operations; **\#shift**: average shifting operations; **\#view**: average used views.
 
 |   Models   | ACC       | #zoom | #shift | #view | 
+|------------|-----------|-------|--------|-------|
 |   GPT-4o   | **69.54** | 1.61  | 1.23   | 1.35  | 
 |  Qwen2-VL  | <u>65.54</u>| 2.51  | 2.17   | 2.12  | 
 |MiniCPM-V 2.6|  64.00  |  1.31  | 0.39   | 0.94  |
