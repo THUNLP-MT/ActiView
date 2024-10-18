@@ -1,6 +1,6 @@
 # ActiView: Evaluating Active Perception Ability for Multimodal Large Language Models
 
-<img src="./figures/figure1.png" alt="Image" width=80%>
+<p align="center"><img src="./figures/figure1.png" alt="Image" width=60% ></p>
 
 [**🌐 Homepage**](https://wangphoebe.github.io/actiview_homepage/)| [**📖 arXiv**](https://arxiv.org/pdf/2410.04659.pdf) 
 
