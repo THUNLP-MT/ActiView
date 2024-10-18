@@ -9,7 +9,7 @@ Coming soon ⏳🔜
   
 ## Timeline
 
-<span style="color: gray;">📢 [2024-10-20] Benchmark and evaluation toolkit (for API-based models) released [TBD]This text will be blue</span>
+<font color=#0f0f0f>📢 [2024-10-20] Benchmark and evaluation toolkit (for API-based models) released [TBD]</font>
 
 📢 [2024-10-14] Homepage released.
 
