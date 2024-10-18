@@ -25,7 +25,7 @@ This repository contains all the necessary materials, including:
 
 ### Results of Zooming and Shifting Pipelines
 
-The evaluation of active perception abilities on our benchmark, including zooming, and shifting. "Model AVG": average scores of column "Zooming", "Shifting-R", "Shifting-E", "Shifting-M", and "Shifting-H". The best scores of each column are bolded, and the best scores in each model types are **underlined**.
+The evaluation of active perception abilities on our benchmark, including zooming, and shifting. "Model AVG": average scores of column "Zooming", "Shifting-R", "Shifting-E", "Shifting-M", and "Shifting-H". 
 
 #### Proprietary Models
 
@@ -80,6 +80,9 @@ The evaluation of active perception abilities on our benchmark, including zoomin
 |MiniCPM-V 2.6|  64.00   | 1.31  | 0.39   | 0.94  |
 | mPLUG-Owl3 |   59.69   | 2.59  | 1.49   | 1.43  |
 |  Idefics3  |   62.15   | 1.16  | 0.59   | 0.58  |
+
+## Evaluation
+
 
 ## Citation
 If you find our project useful, please consider citing:
