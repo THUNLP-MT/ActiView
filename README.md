@@ -12,7 +12,7 @@ Coming soon ⏳🔜
   
 ## Timeline
 
-_📢 [2024-10-20] Benchmark and evaluation toolkit (for API-based models) released [TBD]_
+📢 [2024-10-23] Benchmark and evaluation toolkit (will be updated soon, does not support single-image models) released.
 
 📢 [2024-10-14] Homepage released.
 
@@ -86,6 +86,18 @@ The evaluation of active perception abilities on our benchmark, including zoomin
 
 ## Evaluation
 
+To run the evaluation, please modify the mehtods for loading models, inference, and post processing of model generated answers. 
+
+You can also use our provided scripts for some models (including Qwen2-VL, mPLUG-Owl3, Idefics3, Mantis, Brote, MMICL. API-based models will be available soon.)
+
+Please try:
+```
+bash eval_script/run_qwen2vl_mix.sh 0,1,2,3 ../asset path_to_qwen2vl > qwen_mix.log 2>&1 &
+```
+
+_These are temporal scripts and will be updated soon. If you find the scripts does not working properly, please raise issues in this repo._
+
+Sample outputs are provided in **results** dir.
 
 ## Citation
 If you find our project useful, please consider citing:

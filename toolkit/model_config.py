@@ -1,45 +1,48 @@
+import sys, os
+import torch
 import transformers
+from transformers import AutoTokenizer, AutoModel
+from pathlib import Path
 
 #################################
 """
-Configuration of  model path
+Configuration of model path
 """
-model_mapper = {'idefics': 'idefics2-8b',
-            'idefics3': 'Idefics3-8B-Llama3',
-            'llavanext': 'lmms-lab/llava-next-interleave-qwen-7b',
-            'llavaonevision': 'llava-onevision-qwen2-7b-ov',
-            'mantis': 'TIGER-Lab/Mantis-8B-Idefics2',
-            'minicpmv2.5':'MiniCPM-Llama3-V-2_5',
-            'minicpmv2.6':'MiniCPM-V-2_6',
-            'mplugowl3': 'mplug_owl3',
-            'mplugowl2': 'mplug-owl2-llama2-7b',
-            'qwen2vl': 'Qwen2-VL-7B-Instruct',
-            'slime8b': ''}
+model_mapper = {'idefics': 'path_to_your_model',
+            'idefics3': 'path_to_your_model',
+            'llavanext': 'path_to_your_model',
+            'llavaonevision': 'path_to_your_model',
+            'mantis': 'path_to_your_model',
+            'minicpmv2.5':'path_to_your_model',
+            'minicpmv2.6':'path_to_your_model',
+            'mplugowl3': 'path_to_your_model',
+            'mplugowl2': 'path_to_your_model',
+            'qwen2vl': 'path_to_your_model',
+            'slime8b': 'path_to_your_model'}
+
+chat_set = {"gpt", "gemini", "idefics", "mantis", "llavaonevision", "minicpmv2.6", "mplugowl3", "qwen2vl"}
 
 #################################
 """
 load your model here
 """
+
 def load_model(model_path, model_scale, processpor_path, model_name='Brote'):
-    print('##########')
-    print(model_name)
-    print('##########')
-    if model_name.lower() in model_mapper:
+    #print('##########')
+    #print(model_name)
+    #print('##########')
+    if model_name.lower() in model_mapper or model_path is not None:
         tokenizer, processor, generation_kwargs = None, None, None
         model_name = model_name.lower()
-        model_path = model_mapper[model_name]
+        if model_path is None:
+            model_path = model_mapper[model_name]
 
-        #global tokenizer
         if model_name == 'mplugowl2':
-            from model_mplugowl2 import load_model as load_model_mplugowl2
-            from model_mplugowl2 import inference as inference_mplugowl2
-
-            model_generation = load_model_mplugowl2('mplug-owl2-llama2-7b')
+            raise NotImplementedError()
 
         elif model_name == 'mplugowl3':
             sys.path.append("/yeesuanAI05/thumt/dyr/mplug_owl3")
             from mplug_owl3.modeling_mplugowl3 import mPLUGOwl3Model
-            from transformers import AutoTokenizer
 
             model = mPLUGOwl3Model.from_pretrained(model_path, attn_implementation='sdpa', torch_dtype=torch.half).cuda()
             tokenizer = AutoTokenizer.from_pretrained(model_path)
@@ -47,8 +50,7 @@ def load_model(model_path, model_scale, processpor_path, model_name='Brote'):
             generation_kwargs = {'tokenizer': tokenizer}
 
         elif model_name == 'minicpmv2.6':
-            from pathlib import Path
-            sys.path.append(str(mini_cpm_path))
+            sys.path.append(model_path)
             from transformers import AutoModel, AutoTokenizer
 
             torch.manual_seed(0)
@@ -57,93 +59,79 @@ def load_model(model_path, model_scale, processpor_path, model_name='Brote'):
             generation_kwargs = {'tokenizer': tokenizer}
 
         elif model_name == 'minicpmv2.5':
-            sys.path.append(str(mini_cpm_path))
-            from chat import MiniCPMVChat
-
-            torch.manual_seed(0)
-            model = MiniCPMVChat(model_path)
+            raise NotImplementedError()
 
         elif model_name == 'qwen2vl':
             from transformers import Qwen2VLForConditionalGeneration, AutoTokenizer, AutoProcessor
+            from qwen_vl_utils import process_vision_info
 
             model = Qwen2VLForConditionalGeneration.from_pretrained(model_path, torch_dtype=torch.bfloat16, device_map="auto")
             processor = AutoProcessor.from_pretrained(model_path, max_pixels = 1040 * 28 * 28, min_pixels = 100 * 28 * 28)
+            generation_kwargs = {'process_vision_info': process_vision_info}
             
         elif 'llava' in model_name: # ov, TODO: other llava models
             from llava.model.builder import load_pretrained_model
             if 'onevision' in model_name:
                 warnings.filterwarnings("ignore")
+                from llava.mm_utils import process_images, tokenizer_image_token
                 from llava.constants import IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN
                 from llava.conversation import conv_templates
-                #tokenizer, model, image_processor, max_length = load_pretrained_model(model_path, None, 'llava_qwen', device_map='auto', force_download=False)  # Add any other thing you want to pass in llava_model_args
                 tokenizer, model, image_processor, max_length = load_pretrained_model(model_path, None, 'llava_qwen', device_map='auto', force_download=False, image_aspect_ratio="anyres")
-                #tokenizer, model, image_processor, max_length = load_pretrained_model(model_path, None, 'llava_qwen', device_map='auto', force_download=False, image_aspect_ratio="square")
                 generation_kwargs = {
                     'IMAGE_TOKEN_INDEX': IMAGE_TOKEN_INDEX,
                     'DEFAULT_IMAGE_TOKEN': DEFAULT_IMAGE_TOKEN,
                     'conv_templates': conv_templates,
                     'conv_template': "qwen_2",  # Make sure you use correct chat template for different models
                     'tokenizer': tokenizer,
-                    'image_processor': image_processor}
-        else:
-            # mantis, idefics, idefics3
+                    'image_processor': image_processor,
+                    'process_images': process_images,
+                    'tokenizer_image_token': tokenizer_image_token}
+            else:
+                raise NotImplementedError()
+
+        elif model_name.lower() in ['mantis', 'idefics', 'idefics3']:
             from transformers import AutoProcessor, AutoModelForVision2Seq
 
-            #processor = AutoProcessor.from_pretrained("TIGER-Lab/Mantis-8B-Idefics2") # do_image_splitting is False by default
-            #model = AutoModelForVision2Seq.from_pretrained("TIGER-Lab/Mantis-8B-Idefics2", device_map="auto").to(torch.bfloat16)
             if model_name.startswith('idefics'):
-                processor = AutoProcessor.from_pretrained(model_path, do_image_splitting=False) 
+                processor = AutoProcessor.from_pretrained(model_path) 
+                #processor = AutoProcessor.from_pretrained(model_path, do_image_splitting=False) # if OOM occurs
             else:
                 print('loading')
-                processor = AutoProcessor.from_pretrained(model_path) # do_image_splitting is False by default
-                # model = AutoModelForVision2Seq.from_pretrained(model_mapper[model_name], device_map="auto").to(torch.bfloat16)
+                processor = AutoProcessor.from_pretrained(model_path) 
             model = AutoModelForVision2Seq.from_pretrained(model_path, device_map="auto", torch_dtype=torch.bfloat16)
-
             generation_kwargs = {
                 "max_new_tokens": 20,
                 "num_beams": 1,
                 "do_sample": False}
+
+        elif model_name.lower() in ['brote', 'mmicl']:
+            sys.path.append(model_path)
+            if not 'MMICL' in  model_path:
+                from model.instructblip_icl import InstructBlipConfig, InstructBlipForConditionalGeneration, InstructBlipProcessor
+            else:
+                from model.instructblip import InstructBlipConfig, InstructBlipModel, InstructBlipPreTrainedModel,InstructBlipForConditionalGeneration,InstructBlipProcessor
+            
+            config = InstructBlipConfig.from_pretrained(model_path)
+            if not 'MMICL' in  model_path:
+                config.qformer_config.global_calculation = 'add'
+                config.qformer_config.send_condition_to_llm = False
+                config.qformer_config.both_condition = False
+            
+            processor = InstructBlipProcessor.from_pretrained(processor_ckpt)
+            model = InstructBlipForConditionalGeneration.from_pretrained(model_ckpt, config=config).to('cuda:0',dtype=torch.bfloat16) 
+            
+            image_placeholder="图"
+            sp = [image_placeholder]+[f"<image{i}>" for i in range(20)]
+            sp = sp+processor.tokenizer.additional_special_tokens[len(sp):]
+            processor.tokenizer.add_special_tokens({'additional_special_tokens':sp})
+            if model.qformer.embeddings.word_embeddings.weight.shape[0] != len(processor.qformer_tokenizer):
+                model.qformer.resize_token_embeddings(len(processor.qformer_tokenizer))
+
+        else:
+            raise NotImplementedError()
+            
         return model.eval(), processor, generation_kwargs
 
-    if model_scale == 'xxl':
-        if model_name == 'MMICL':
-            model_ckpt = ""    
-        else:
-            model_ckpt = ""    
-        processor_ckpt = ""
-    else:
-        if model_name == 'MMICL':
-            model_ckpt = brote_root+''
-        else:
-            model_ckpt = brote_root+''
-        processor_ckpt = brote_root+''
-    
-    sys.path.append(brote_root+'/MMICL/MIC-master')
-    if not 'MMICL' in  model_ckpt:
-        from model.instructblip_icl import InstructBlipConfig, InstructBlipForConditionalGeneration, InstructBlipProcessor
-    else:
-        from model.instructblip import InstructBlipConfig, InstructBlipModel, InstructBlipPreTrainedModel,InstructBlipForConditionalGeneration,InstructBlipProcessor
-    
-    config = InstructBlipConfig.from_pretrained(model_ckpt)
-    if not 'MMICL' in  model_ckpt:
-        config.qformer_config.global_calculation = 'add'
-        config.qformer_config.send_condition_to_llm = False
-        config.qformer_config.both_condition = False
-    
-    print("loading models")
-    processor = InstructBlipProcessor.from_pretrained(processor_ckpt)
-    model = InstructBlipForConditionalGeneration.from_pretrained(model_ckpt,
-            config=config).to('cuda:0',dtype=torch.bfloat16) 
-    
-    image_placeholder="图"
-    sp = [image_placeholder]+[f"<image{i}>" for i in range(20)]
-    sp = sp+processor.tokenizer.additional_special_tokens[len(sp):]
-    processor.tokenizer.add_special_tokens({'additional_special_tokens':sp})
-    if model.qformer.embeddings.word_embeddings.weight.shape[0] != len(processor.qformer_tokenizer):
-        model.qformer.resize_token_embeddings(len(processor.qformer_tokenizer))
-    
-    replace_token="".join(32*[image_placeholder])
-    return model, processor, replace_token
 
 ################################
 """
@@ -193,3 +181,94 @@ def predict(model, processor, images, prompt, model_name="GPT", mode=None):
         generated_text = processor.batch_decode(outputs, skip_special_tokens=True)
         #print(generated_text)
         return generated_text
+
+def predict_chat(model, processor, evaluator, eval_type, generation_kwargs, zooming_select=None, model_name=''):
+    def do_predict(images, messages):
+        if model_name == 'minicpmv2.6':
+            response = model.chat(image=None, msgs=messages, tokenizer=generation_kwargs['generation_kwargs'],temperature=0., sampling=False, max_new_tokens=20) 
+            if 'Answer:' in response:
+                response = [response.split('Answer:')[-1].strip()]
+            else:
+                response = [response]
+
+        elif model_name == 'mplugowl3':
+            messages.append({"role": "assistant", "content": ""}) 
+            inputs = processor(messages, images=images).to('cuda')
+            inputs.update({'tokenizer': generation_kwargs['generation_kwargs'],
+                    'max_new_tokens':20,
+                    'decode_text':True,
+                    'temperature': 0.})
+            response = model.generate(**inputs)
+
+        elif model_name == 'qwen2vl':
+            image_inputs, video_inputs = process_vision_info(messages)
+            text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+            torch.cuda.empty_cache()
+            inputs = processor(text=[text],
+                images=image_inputs,
+                videos=video_inputs,
+                padding=True, return_tensors="pt",).to(model.device).to(model.dtype)
+
+            torch.cuda.empty_cache()
+            try:
+                response = model.generate(**inputs, max_new_tokens=20)
+                generated_ids_trimmed = [out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, response)]
+                response = processor.batch_decode(
+                    generated_ids_trimmed, 
+                    skip_special_tokens=True, 
+                    clean_up_tokenization_spaces=False)
+            except Exception as e:
+                print(e)
+                response = ['Z'] # in case OOM error appears, can be used for checking or post processing
+            torch.cuda.empty_cache()
+
+        elif model_name == 'llavaonevision':
+            if not isinstance(images, list):
+                images = [images]
+            image_tensor = generation_kwargs['process_images'](images, generation_kwargs['image_processor'], model.config)
+            image_tensor = [_image.to(dtype=torch.float16, device='cuda') for _image in image_tensor]
+            input_ids = tokenizer_image_token(messages, generation_kwargs['tokenizer'], generation_kwargs['IMAGE_TOKEN_INDEX'], return_tensors="pt").unsqueeze(0).to('cuda')
+            image_sizes = [image.size for image in images]
+            try:
+                cont = model.generate(
+                    input_ids,
+                    images=image_tensor,
+                    image_sizes=image_sizes,
+                    do_sample=False,
+                    temperature=0,
+                    max_new_tokens=20)
+                response = generation_kwargs['tokenizer'].batch_decode(cont, skip_special_tokens=True)
+            except:
+                print('OOM')
+                response = ['Z'] # in case OOM error appears, can be used for checking or post processing
+        else:
+            # mantis, idefics2&3
+            prompt = processor.apply_chat_template(messages, add_generation_prompt=True)
+            inputs = processor(text=prompt, images=images, return_tensors="pt")
+            if model_name == 'idefics':
+                inputs = {k: v.to('cuda').to(torch.bfloat16) for k, v in inputs.items()}
+            else: # idefics3, mantis
+                inputs = {k: v.to(model.device) for k, v in inputs.items()}
+
+            if model_name == 'idefics3':
+                generated_ids = model.generate(**inputs, max_new_tokens=20)
+                response = [r.split('\nAssistant: ')[1] for r in processor.batch_decode(generated_ids, skip_special_tokens=True)]
+            else:
+                generated_ids = model.generate(**inputs, **generation_kwargs)
+                response = processor.batch_decode(generated_ids[:, inputs["input_ids"].shape[1]:], skip_special_tokens=True)
+
+        return response 
+
+    generated_text = []
+
+    if 'QA' in eval_type:
+        for images, messages in tqdm(evaluator.eval_format_func[eval_type](zooming_select)):
+            response = do_predict(images, messages)
+            generated_text.append(response[0])
+    else:
+        for images, messages in tqdm(evaluator.eval_format_func[eval_type]()):
+            response = do_predict(images, messages)
+            generated_text.append(response[0])
+        if eval_type == 'zooming':
+            print('eval_type', eval_type, '\n',generated_text)
+    return generated_text
