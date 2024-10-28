@@ -152,22 +152,22 @@ def run_eval(evaluator, model, processor, generation_kwargs, result_dir, args, s
         print('done\n')
 
 
-def laod_args():
-    parser = argparse.ArgumentParser(description='args for evaluation')
-    parser.add_argument('--model_path', type=str, default=None, help='if model path is not provided, will pick the path to model_name in mapper in model_config.py')
-    parser.add_argument('--input_type', type=str, default='multi', help='single, multi, chat')
-    parser.add_argument('--model_name', type=str, default='Brote')
-    parser.add_argument('--initial_only', action="store_true", help='whether to evaluate only the initial view of shifting type')
-    parser.add_argument('--use_gt', action="store_true", help='whether to evaluate performance given views containing human annotated clues')
-    parser.add_argument('--processor_path', type=str, required=False)
-    parser.add_argument('--eval_data', type=str, required=True, help='path to data.json file')
-    parser.add_argument('--eval_image', type=str, required=False, help='path of image dir, by default, it is placed under eval_data dir')
-    parser.add_argument('--model_scale', type=str, default='xl', help='different model scale, if applicable')
-    parser.add_argument('--num_split', type=int, default=4)
+def load_args():
+    parser = argparse.ArgumentParser(description='args for ActiView evaluation')
+    parser.add_argument('--model_path', type=str, default=None, help='The local path to the model to be evaluated, or the name in hugging face model hub. If model path is not provided, will pick up the path of model_name in model_mapper in the model_config.py script.')
+    parser.add_argument('--input_type', type=str, default='multi', help='Please choose from: multi, chat, single. "multi": for multi-image model such as MMICL and Brote; "chat": for models that accept input in chat format (of user and assistant roles); "single": for single-image models such llava.')
+    parser.add_argument('--model_name', type=str, default='qwen2vl', help='Please specify the name of model to be evaluated. This arg will be used for saving results and selecting the class of evaluator. If it is not manually specified, we will use the name "qwen2vl" with the evaluator class EvaluatorChat by default.')
+    parser.add_argument('--initial_only', action="store_true", help='Whether to evaluate with the initial view only. This is employed as the baseline of the shifting type, which addresses the importance of multi-image input.')
+    parser.add_argument('--use_gt', action="store_true", help='Whether to evaluate the performance given views containing human annotated clues.')
+    parser.add_argument('--processor_path', type=str, required=False, help='Some models might require path to their processor when initializing and for input processing, please specify here.')
+    parser.add_argument('--eval_data', type=str, required=True, help='Path to data.json file.')
+    parser.add_argument('--eval_image', type=str, required=False, help='Path of image dir, by default, it is placed under eval_data dir. You can alse place it elsewhere and specify here.')
+    parser.add_argument('--model_scale', type=str, default='xl', help='Different model scale, if applicable')
+    parser.add_argument('--num_split', type=int, default=4, help='The number of view splits. By default, it is 4. We also support other splits such as 6,8,9,16.')
     parser.add_argument('--eval_image_split', type=str, required=False, help='path of dir of image splits')
     parser.add_argument('--eval_image_bbox', type=str, required=False, help='path to bbox')
-    parser.add_argument('--eval_type', type=str, default='full', help='choose from: shifting, zooming, full, mix')
-    parser.add_argument('--pre_define_view', type=str, default=None, help='hard, medium, easy')
+    parser.add_argument('--eval_type', type=str, default='full', help='Choose from: shifting, zooming, mix, full. Note that full is for general VQA results, while shifting, zooming, and mix are for acitve perception.')
+    parser.add_argument('--pre_define_view', type=str, default=None, help='Predefined difficulty for shifting: hard, medium, easy')
     parser.add_argument('--result_dir', type=str, default='../results')
     parser.add_argument('--save_results', action="store_true", help='whether to save model generated results. If false, will directly print acc')
     args = parser.parse_args()
@@ -178,7 +178,7 @@ def laod_args():
     return args
 
 if __name__ == '__main__':
-    args = laod_args()
+    args = load_args()
     
     save_name = f'{args.eval_type}.json'
     print('eval_type: ', args.eval_type)
