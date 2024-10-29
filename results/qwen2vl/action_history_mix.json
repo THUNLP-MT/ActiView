@@ -1,0 +1,5645 @@
+[
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The two people are facing each other in the upper left and upper right parts of the image.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "A. No;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show the people holding poles, which is the main object they are holding in their hands.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. White poles"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"To show the test result for SARS-CoV-2, which is indicated by the presence of a line in the test area (C) and the absence of a line in the control area (T).\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "```json\n{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}\n```",
+            "rst": null,
+            "answer": "B. Negative."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"To capture the full view of the gate and the people entering it, including the left side and the right side.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "B. The left side."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The lotion in part 1 is labeled as 'Sensitive Intimate Wash', which is typically marketed towards males. The lotion in part 3 is from the brand 'Chupa Chups', which is known for its playful and fun branding, often associated with younger or more casual consumers. The lotion in part 4 is from the brand 'be beauty care', which has a more neutral and general appeal, making it a safer bet for a male consumer. The lotion in part 2 is from the brand 'Palmolive', which is a well-known brand for personal care products, and the bottle design suggests it is a unisex product.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. The black one;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,3\",\n  \"reason\": \"The girl is wearing a bracelet on her right hand, which can be clearly seen in parts 2 and 3.\"\n}",
+            "rst": [
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2
+            ],
+            "answer": "C. A pink bracelet."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The green sign with the text 'TOKCOBO' indicates the direction to TOKCOBO. The photographer is in the lane that is going in the direction of the sign, so they should stay in this lane to reach TOKCOBO.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "C. Change lane right once;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The person in purple is walking towards the right side of the image, as indicated by the direction of their body and the position of their legs.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "A. In the direction of sunlights;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1\",\n  \"reason\": \"The most expensive watermelon is located in the upper left part of the image, and it is the largest one.\"\n}",
+            "rst": [
+                1
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1,
+                2
+            ],
+            "answer": "C. 59;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"none\",\n  \"reason\": \"The image does not provide enough information to determine if it is safe for the driver to change lanes. The image only shows the steering wheel and part of the dashboard, but does not show the road or traffic conditions.\"\n}",
+            "rst": null,
+            "answer": "B. Safe, because no other cars can be seen through the windows."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2, 3\",\n  \"reason\": \"The woman in blue is looking at something in her hand, which could be a phone or a bag. The images show her looking down, indicating she is focused on her hand.\"\n}",
+            "rst": [
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                3,
+                4
+            ],
+            "answer": "B. A cellphone;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,4\",\n  \"reason\": \"Part 2 shows the person holding a toy, and Part 4 shows the machine's interface, which indicates the toy has been successfully obtained.\"\n}",
+            "rst": [
+                2,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2, 3\",\n  \"shift\": \"1, 4\"\n}",
+            "rst": [
+                1,
+                2
+            ],
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The photo shows a performance on stage with people clapping and taking pictures, which suggests it is during a live event. The lighting and attire of the performers indicate it could be a cultural or theatrical performance, possibly in the evening or at a time when the venue is well-lit. The presence of a smartphone taking a photo also suggests it is a public event where attendees are encouraged to capture the moment. Therefore, the photo is likely taken during a live performance event, possibly in the evening or at a time when the venue is well-lit.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "B. After a performance;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"The people in the upper left and upper right parts of the image are looking at something, and the people in the lower left and lower right parts of the image are also looking at something. Therefore, it is likely that the people on the shore are looking at the same thing.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"2\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "D. A cellphone."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The person is riding a motorcycle in the middle of the road, which is generally considered illegal in many places to ensure safety and traffic flow.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. Legal."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"To determine the direction of movement of the leftmost person relative to the football.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. Moving towards the football."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The person in the lower right part of the image is riding a bicycle.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The traffic light in the bottom right part of the image is showing a green light, allowing vehicles to pass.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "C. None;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1\",\n  \"reason\": \"The people in white are clapping hands in the upper left part of the image.\"\n}",
+            "rst": [
+                1
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1,
+                2
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show children falling on the ground while playing football.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 3\",\n  \"shift\": \"2, 4\"\n}",
+            "rst": [
+                1,
+                4
+            ],
+            "answer": "D. Two of them fall on the ground."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"These parts show individuals holding and writing on paper, indicating they are engaged in writing activities.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"2\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "B. 2;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2, 3, 4\",\n  \"reason\": \"The person is wearing a race bib and standing near the finish line, which indicates the race has already started. The presence of mud on the person's legs suggests they have been running, which is consistent with the race setting.\"\n}",
+            "rst": [
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2, 3, 4\",\n  \"shift\": \"1\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. After the race."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"The helicopter is flying over a field with a tank in the background, which suggests it is involved in a military operation.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"2\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "B. A military exercise."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The player with the highest number on the jersey is in the lowerright part of the image, and the ball is near their feet, indicating they are controlling it.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,3\",\n  \"reason\": \"The man with the white hat with black stripes is looking at a booth with a sign that says 'Picaluna Beautiful Funerals', indicating that the service being promoted is funeral services.\"\n}",
+            "rst": [
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2
+            ],
+            "answer": "B. Funeral planning;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3\",\n  \"reason\": \"The person in white shirt is holding a basket in the upperright part of the image.\"\n}",
+            "rst": [
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                3,
+                4
+            ],
+            "answer": "A. A basket;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"To see the hands of the person standing in the leftmost position of each part\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "B. Right hand;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"These parts show people sitting under umbrellas, which suggests they might be eating or drinking at an outdoor cafe or restaurant.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "D. Watching a street performance."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show the woman in red holding the dog, and the hand she is using to hold the dog is visible in these parts.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"2\", \"shift\": \"3\"}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "B. The left hand."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1, 2, 3, 4\",\n  \"reason\": \"These parts show the people in different positions, indicating their movement.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 3\",\n  \"shift\": \"2, 4, 5\"\n}",
+            "rst": [
+                1,
+                3
+            ],
+            "answer": "D. Away from the camera."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"To analyze the lighting conditions in all four parts of the image.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show the lane markings and the car's position, which are necessary to determine the type of lane the car is driving towards.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "A. Bus lane;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"People are standing next to the traffic light in these parts.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "B. Yes."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The person holding a cross in the upper part of the picture is wearing a red robe in both parts 1 and 2.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "D. Blue."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The man in black is riding a bicycle in the upper left and lower left parts of the image.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"To check if player No. 24 is touching the football, we need to look at the area where the football is located. In parts 1 and 2, we can see the football near the player No. 24, indicating that he is likely touching it.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3\",\n  \"reason\": \"The person wearing a blue top and holding a white doll is visible in the upperright part of the image.\"\n}",
+            "rst": [
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                3,
+                4
+            ],
+            "answer": "A. To the right side;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"The man singing is in the upper right part and the woman is in the lower right part. The man's left hand is visible in the upper right part, and the woman's arm is visible in the lower right part. The interaction between the man and the woman can be observed in these parts.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"To compare the direction of the windsurf boards in the upper right and lower right parts of the image.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"3\", \"shift\": \"none\"}",
+            "rst": [
+                3
+            ],
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2\",\n  \"reason\": \"The girl in black is facing the photographer and appears to be interacting with the person taking the photo.\"\n}",
+            "rst": [
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3,4\"\n}",
+            "rst": [
+                2,
+                3,
+                4
+            ],
+            "answer": "B. Making coffee;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the people wearing helmets, which are likely to be the participants of the battle reenactment. The helmets are essential for protection during such events.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1,2,3,4\",\n  \"shift\": \"5\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. Fighting against each other;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,4\",\n  \"reason\": \"These parts show the crosswalk and the person walking on it, allowing us to observe the person's actions.\"\n}",
+            "rst": [
+                2,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "B. Talking on the phone;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The person wearing a blue scarf is located in the bottom right part of the image, which is the only part where a person wearing a blue scarf is visible.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "D. Waving hands."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The woman in pink and black clothes and a hat is located in the bottom right part of the image, which is the only part where she is visible.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"none\"\n}",
+            "rst": [],
+            "answer": "C. Walking;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,4\",\n  \"reason\": \"These parts show the people on the right side of the picture, where they are walking and standing.\"\n}",
+            "rst": [
+                2,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "A. Walking;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The person in pink with blonde hair is standing in the lowerright part of the image, which is the only part where a person with blonde hair is visible.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "A. Holding a pink flag.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The person lifting the hammer is in the lowerright part of the image, and the hammer is being used to strike an object on the anvil.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"1,3,4\"\n}",
+            "rst": [
+                1,
+                3
+            ],
+            "answer": "A. The metal bar.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1, 2, 3, 4\",\n  \"reason\": \"The photo shows the entrance of the Montreal Museum of Fine Arts with banners for different exhibitions, which can provide information about the time the photo was taken.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. Between 1980 and 2020.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"The bikes in parts 3 and 4 are moving towards the same direction as the car in part 1.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "B. No.."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,3\",\n  \"reason\": \"The athlete in the red jersey is hitting the ball in the upper left part, and the athlete in the blue jersey is hitting the ball in the lower left part.\"\n}",
+            "rst": [
+                1,
+                3
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1,
+                2
+            ],
+            "answer": "C. 6.."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3\",\n  \"reason\": \"The phone is connected to the Internet via 3G, as indicated by the 3G signal icon on the status bar.\"\n}",
+            "rst": [
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "A. Via mobile network.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The images show tram tracks and tram cars, which are typically used in areas with left-hand traffic. The tram cars are on the left side of the tracks, indicating left-hand traffic.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Lef-hand traffic.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These doctors are not wearing protective eyewear, which is typically worn by doctors observing the surgical microscope.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "A. Doctor on the left.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the control panel and the machine's current state, including the passbook and the green light indicating the machine is ready.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Update in progress.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"The people in the upper right and lower right parts of the image are walking side by side, which suggests they might be holding hands.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "A. Yes.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,3\",\n  \"reason\": \"The progress bar is located in the center of the image, and by zooming in on parts 1 and 3, we can clearly see the progress bar and determine if it is about to reach the end.\"\n}",
+            "rst": [
+                1,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                4
+            ],
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1\",\n  \"reason\": \"The person holding the black flag is holding it with both hands, as indicated by the two hands visible in the image.\"\n}",
+            "rst": [
+                1
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. Two hands."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show children playing in the water fountain, which is the main activity in the image.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 3\",\n  \"shift\": \"2, 4, 5\"\n}",
+            "rst": [
+                1,
+                3
+            ],
+            "answer": "D. Playing with fountain."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show the statue facing the two people behind the wall in the distance.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The man is shearing a sheep, and all four parts show different stages of the shearing process.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 4, 5\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                1,
+                2,
+                4
+            ],
+            "answer": "A. Shaving wool;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The person in the bottom right part of the image is wearing roller skates and appears to be engaged in a recreational activity, possibly skating or playing a game.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "C. Playing hockey."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3\",\n  \"reason\": \"The green exit sign is located in the upper right part of the image, indicating the direction to the safe exit.\"\n}",
+            "rst": [
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"1,2,4\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. Right;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the athletes running in the same direction, while the other parts do not provide enough information to determine their direction.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1,2,3,4\", \"shift\": \"none\"}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3\",\n  \"reason\": \"The sign in the upperright part indicates the direction to Taicang Port, which is on the right side of the highway. The sign in the lowerleft part shows the direction to Kunshan and Wuxi, which are on the left side of the highway. The sign in the upperleft part shows the direction to Changshu and Nantong, which are on the left side of the highway. The sign in the lowerright part shows the speed limit and other traffic rules, which are not relevant to the question.\"\n}",
+            "rst": [
+                3
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"3\", \"shift\": \"none\"}",
+            "rst": [
+                3
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The image shows the car's dashboard, the road, and the car's position on the road, which can be used to determine if the driver is complying with traffic regulations.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "```json\n{\n  \"part\": \"2,4\",\n  \"reason\": \"The leftmost lane is for small passenger cars and trucks, as indicated by the signs in the image. The other parts do not provide relevant information about the lane restrictions.\"\n}\n```",
+            "rst": null,
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"To observe the spiral arms and determine the direction of rotation\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. Anti-clockwise."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"To observe the star cluster's movement direction in all four quadrants of the galaxy.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. Anti-clockwise."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"To observe the spiral structure and determine the direction of rotation\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. Clockwise."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"These parts show the person in the water, which is relevant to the question of whether the person is in the sea.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"2\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "B. Yes."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,3\",\n  \"reason\": \"To determine the relative position of the girl holding the red balloon to the girl holding the blue balloon, we need to zoom in on the parts where they are located. The '2' part shows the girl holding the blue balloon, and the '3' part shows the girl holding the red balloon. By comparing these two parts, we can determine the relative position.\"\n}",
+            "rst": [
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2
+            ],
+            "answer": "B. Right."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The white horses are on the left side of the other horses in both the upper left and lower left parts of the image.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                4
+            ],
+            "answer": "B. Left;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,3\",\n  \"reason\": \"In the upperright and lowerright parts, the person is closer to the objects on the desk compared to the other parts.\"\n}",
+            "rst": [
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2
+            ],
+            "answer": "B. Glasses;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The blue desk is located in the upperright part of the image, which is the same as the lowerright part (4).\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. Grey sofa;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,4\",\n  \"reason\": \"These parts show the shelves with the least number of sesame cakes behind the person.\"\n}",
+            "rst": [
+                2,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "A. The person in white;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show individuals standing closer to the railing, which is near the lake.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. The men in red;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,4\",\n  \"reason\": \"The person in the black shirt with a graphic design is wearing a purple bracelet, and the person in the pink tank top is also wearing a purple bracelet.\"\n}",
+            "rst": [
+                1,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [],
+            "answer": "B. The woman in pink."
+        }
+    ],
+    [
+        {
+            "init": "```json\n{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show the light yellow house and the tree with purple flowers, allowing for a comparison of their proximity.\"\n}\n```",
+            "rst": null,
+            "answer": "A. The tree with purple flowers;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,4\",\n  \"reason\": \"To check if the parking of the black Lexus is in compliance with regulations, I need to zoom in on the side view (part 2) and the front view (part 4) of the vehicle.\"\n}",
+            "rst": [
+                2,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The cellphone is placed on the desk in the lowerright part of the image.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"4\", \"shift\": \"1,2,3\"}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "D. Desk No.4."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1\",\n  \"reason\": \"The light is located in the upper left part of the image, which is the only part that contains a light fixture.\"\n}",
+            "rst": [
+                1
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1\",\n  \"reason\": \"The woman in the top left corner is wearing a necklace, which is visible in the image.\"\n}",
+            "rst": [
+                1
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. The woman on the left;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The building in the upper left and lower left parts of the image has scaffolding around it, indicating that it is under construction.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "A. The leftmost one;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"The child closest to the white fence is in the bottom right part of the image, which is part 3. The child is standing near the fence, possibly observing something or waiting for someone.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "B. Looking at the sand sculpture;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,4\",\n  \"reason\": \"These parts show the grass, and the grass on the right appears to be taller than on the left.\"\n}",
+            "rst": [
+                2,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"2,3\", \"shift\": \"1,4\"}",
+            "rst": [
+                1,
+                2
+            ],
+            "answer": "B. Right."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"To compare the elephants in the left and right parts of the image, focusing on their overall appearance and any noticeable differences.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1,2\",\n  \"shift\": \"3,4,5\"\n}",
+            "rst": [
+                1,
+                2
+            ],
+            "answer": "B. The right elephant has no tusks.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"In parts 1 and 2, the windows have opened curtains visible through the glass.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                4
+            ],
+            "answer": "B. The second Floor;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"In parts 3 and 4, there are more crates of Coca-Cola and Heineken brands, respectively, compared to the other parts.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"2\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "A. Coca-Cola;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The architectural feature directly above the main door is the archway, which is clearly visible in the lowerright part of the image.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "D. Arch."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show the children closer to the river, with part 1 showing a child in a yellow jacket and part 2 showing a child in a red jacket.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. Child in yellow jacket;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,4\",\n  \"reason\": \"The electric box is located on the tracks in the upper left and lower right parts of the image.\"\n}",
+            "rst": [
+                1,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                3
+            ],
+            "answer": "A. On the side of the tracks;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The green signal receiver is located in the bottom right part of the image, while the white signal receiver is in the bottom left part. The green signal receiver is closer to the bottom right corner of the image, while the white signal receiver is closer to the bottom left corner. Therefore, the green signal receiver is to the right and slightly above the white signal receiver.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. Below."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"To compare the two guide dog icons in different parts of the image.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The first two cars are both white and have the same design features, indicating they are the same brand.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,4\",\n  \"reason\": \"The bowls in front of the person in blue and the person in pink are both yellow, so they are the same color.\"\n}",
+            "rst": [
+                1,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1,4\", \"shift\": \"2,3\"}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3\",\n  \"reason\": \"To check if the clothes of the pedestrians on the road are the same color as the chairs\"\n}",
+            "rst": [
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                3,
+                4
+            ],
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,4\",\n  \"reason\": \"The pink and blue clothes are visible in these parts and can be compared for brand consistency.\"\n}",
+            "rst": [
+                2,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"2\", \"shift\": \"3\"}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3\",\n  \"reason\": \"These parts show the top three runners, and their T-shirts have the same brand and design.\"\n}",
+            "rst": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                4
+            ],
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,3\",\n  \"reason\": \"The cross is located at the highest point of the house in the upper left and upper right parts of the image.\"\n}",
+            "rst": [
+                1,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                4
+            ],
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"To compare the sizes of the two black holes\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2\",\n  \"reason\": \"To check if the blankets on the wooden rack and the bed are the same color\"\n}",
+            "rst": [
+                2
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"2\", \"shift\": \"1,3,4\"}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"These parts show the yellow and red sections of the equipment, which are used less compared to the blue and green sections.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"2,4\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "D. Green.."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"To check the color of the socks worn by the woman running, which are visible in these parts.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "B. No.."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,3\",\n  \"reason\": \"The flag on the pole in part 3 is the flag of the United Arab Emirates, and the ship in part 2 has the registration number DH79, which is registered in the United Arab Emirates.\"\n}",
+            "rst": [
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2
+            ],
+            "answer": "A. Yes.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3\",\n  \"reason\": \"The tower on the right side of the image is covered in scaffolding, indicating that it is under maintenance.\"\n}",
+            "rst": [
+                3
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"3\", \"shift\": \"1,2,4\"}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "C. The tower closer to us on the right.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The blue car is visible in both the upper left and lower left parts of the image.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. It runs slower than other cars.."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,3\",\n  \"reason\": \"The rolling shutters in parts 1 and 3 are closed, while the others are open.\"\n}",
+            "rst": [
+                1,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                4
+            ],
+            "answer": "A. The first store.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The ball is on the right side of the net in both parts 1 and 2.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "B. The right side.."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3\",\n  \"reason\": \"The bottle in the upperright part is made of glass, as indicated by its green color and the fact that it is a bottle, unlike the cans in the other parts.\"\n}",
+            "rst": [
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"2, 4\"\n}",
+            "rst": [
+                2,
+                3,
+                4
+            ],
+            "answer": "C. The drink on the right.."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The image in the bottom right corner shows a bridge with buildings on top of it, which is the closest building to the photographer in the picture.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The man wearing a black hat is located on the left side of the woman wearing a yellow hat in both the upper left and lower left parts of the image.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "A. On the left side;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"To view the bread under the tomatoes in all four parts of the image.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "C. An arch bridge."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The bunch of grapes on the right side of the red barrel is on the ground, as indicated by the bounding box coordinates.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"1,3,4\"\n}",
+            "rst": [
+                1,
+                3
+            ],
+            "answer": "B. On the tree."
+        }
+    ],
+    [
+        {
+            "init": "```json\n{\n  \"part\": \"1\",\n  \"reason\": \"The person in red is visible on the balcony of the house in the upper left part of the image.\"\n}\n```",
+            "rst": null,
+            "answer": "A. The first house;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1\",\n  \"reason\": \"To check if the billboard to the left of the 'Asahi' board has lights on its top\"\n}",
+            "rst": [
+                1
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2,3,4\"}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,4\",\n  \"reason\": \"To compare the visual scale of the two star clusters\"\n}",
+            "rst": [
+                1,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1,3\",\n  \"shift\": \"2,4\"\n}",
+            "rst": [
+                1,
+                2
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,4\",\n  \"reason\": \"The kite in the upper left part and the cityscape in the lower right part suggest that the photo was taken in a country with a combination of traditional and modern elements, which is characteristic of China.\"\n}",
+            "rst": [
+                1,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 3\",\n  \"shift\": \"2, 4\"\n}",
+            "rst": [
+                1,
+                2
+            ],
+            "answer": "B. China"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The photo shows a temple with traditional architectural elements, colorful flags, and people dressed in traditional attire, which are indicative of a cultural and religious site in South Asia. The specific architectural style and the presence of flags with religious significance suggest that this could be a site of Buddhist worship, such as the Mahabodhi Temple in Bodh Gaya, India. Therefore, the photo is likely taken in India.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. India;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts provide a comprehensive view of the building, including its architectural details and surroundings, which are crucial for identifying the location.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "D. Germany."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The image contains information about the origin of the artifact, which is from China. The text in the image is in Chinese, and the artifact is identified as being from the Eastern Han dynasty, which is a period in Chinese history. Therefore, the photo is likely taken in a museum in China.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "B. China;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The American Dream is a pub, restaurant, and show bar located in Paris, France. The image shows the exterior of the establishment with a sign that reads 'The American Dream' and a statue of a man and woman sitting on a bench. The building also has a sign that reads 'Restaurant' and 'Show Bar' and is located on a street with motorcycles parked in front. The American Dream is a popular spot for tourists and locals alike, offering a taste of American culture in the heart of Paris.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "B. France;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the Arc de Triomphe and the Atomium, which are located in Brussels, Belgium.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Belgium;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts provide a comprehensive view of the building's architecture, including its facade, columns, and entrance details, which are essential for identifying the location.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "D. Hungary."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1, 2, 3, 4\",\n  \"reason\": \"The posters and signs in the image contain references to British culture and landmarks, such as 'Notting Hill', 'Abbey Road', and 'Coca-Cola'. These are all iconic symbols associated with the United Kingdom. Additionally, the style of the posters and the way they are displayed on the walls suggest a British market or street scene.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. UK;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The Eiffel Tower is visible in the background, which is a famous landmark of France. The modern architecture and the style of the building also suggest a European setting.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "E. France;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The Atomium and the buildings in the park are iconic structures that are not commonly found in other countries.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Belgium;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1, 2, 3, 4\",\n  \"reason\": \"The text on the sign is in French, and the buildings and water in the background are consistent with a location in Switzerland, specifically Geneva.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "C. Swiss;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The combination of architectural details, the presence of the Swedish flag, and the Ukrainian flag on the balcony suggest that the photo was taken in a location where both countries have diplomatic relations or where there is a significant presence of Ukrainian expatriates. The architectural style and the flags provide clear indicators of the countries involved.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "C. Sweden"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the coastal area with buildings and waves, indicating a coastal location.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 4\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                1,
+                2,
+                4
+            ],
+            "answer": "C. Thailand."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The river in the picture is the Seine River, which is clearly visible in the lowerright part of the image.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "F. Seine River."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,3,4\",\n  \"reason\": \"These parts show the cityscape with buildings and a clock tower, which are characteristic of Hamburg, Germany.\"\n}",
+            "rst": [
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2, 3, 4\",\n  \"shift\": \"1\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "D. Germany"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The event is taking place in a country with a Buddhist temple, which is a common feature in Southeast Asian countries. The blue t-shirts with numbers and the presence of a temple suggest a organized event, possibly a marathon or a similar race. The architecture and the attire of the participants are consistent with what one might expect in a Southeast Asian country.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Thailand;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The presence of a Turkish flag on the building in the upper right part, and the overall landscape and infrastructure in the other parts suggest that this picture is most likely taken in Turkey.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "C. Turkey"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The combination of the text 'EURO2020' and the architectural style of the building in the background suggest that this image is taken in St. Petersburg, Russia. The text 'EURO2020' is associated with the UEFA Euro 2020 football tournament, which was held in Russia. The architectural style of the building, with its ornate facade and decorative elements, is characteristic of St. Petersburg's historical architecture.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "C. Saint Petersburg"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The selected parts provide a comprehensive view of the mosque, including its architectural features, surroundings, and signage, which are essential for identifying the place.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 3\",\n  \"shift\": \"2, 4, 5\"\n}",
+            "rst": [
+                1,
+                3
+            ],
+            "answer": "B. A mosque.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The image shows a large building with a sign that has Japanese characters, indicating that the event is likely taking place in Japan. The presence of snow and winter activities further supports this.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. Japan"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The image is split into four parts, and all parts show different angles and details of the same building, which is a large, modern structure with glass windows and a staircase. The presence of bicycles and pedestrians in the foreground suggests an urban setting. The combination of these elements across all four parts provides a comprehensive view of the location.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 3, 4\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. Hong Kong;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The sign in the bottom right corner of the image indicates that the location is in New York, USA, which is part of the Hudson Yards area.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. USA;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The image shows people performing martial arts in an open area with buildings and cars in the background. The clothing style and the setting suggest an Asian country, possibly China. The red text on the building in the upper right part of the image is in Chinese characters, which further supports this.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. China"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the same protest scene with flags and banners, indicating a specific location.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. India;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts provide a comprehensive view of the fire station, including its exterior, signage, and entrance details, which are essential for identifying its location.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "C. New south wales;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The building in the image has a modern architectural style and the text on the screen is in English, which suggests it could be in the United Kingdom. The brick pavement and the overall urban setting also support this observation.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Netherlands;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the ship and the surrounding landscape, which can help identify the location.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Malta;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the wooden structure and snow-covered ground, which are common in Japan.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Japan"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the traditional architecture and natural surroundings, which are characteristic of Japan.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "C. Japan"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts provide a comprehensive view of the entire scene, including the building and the people, which are crucial for identifying the location.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. Taipei"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the architectural features and signage of the National Library of Indonesia, which is located in Indonesia.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "D. Indonesia."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The text on the cigarette pack indicates the country of origin, which is Indonesia.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "D. Indonesia."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1, 2, 3, 4\",\n  \"reason\": \"The signs and posters in the image are in English, and the people are wearing clothing that is common in the United States. The architecture in the background also resembles that of the United States.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "A. USA;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show a busy street with numerous signs in Japanese, indicating that the location is in Japan.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. Japan.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The flag in the background of the upper left and upper right parts of the image is the flag of Thailand, which is red, white, and blue with a golden chedi in the center. This flag is a clear indicator of the country.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Thailand.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the architectural details of the building, including the dome and columns, which can help identify the country.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "C. Singapore.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the architectural style and design elements that are common in modern shopping malls around the world, but the specific design and layout suggest a location in a country with a developed economy and a focus on modern architecture. The presence of a McDonald's and a Samsung store also suggests a developed country. The language on the sign in the upper left part indicates that the mall is located in a country where Turkish is spoken, which could be Turkey. Therefore, I choose parts 1, 2, 3, and 4 to analyze the architectural style and design elements, as well as the language on the sign, to determine the likely country of origin.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Turkey.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3\",\n  \"reason\": \"The blue truck in the upper right part of the image has a license plate that appears to be from a different country, possibly indicating it is not from the same city as the other vehicles.\"\n}",
+            "rst": [
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "C. Busan.."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show the bench and the path leading to it, which is necessary to answer the question about how to get to the bench.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. Going downwards the stairs."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the building from different angles, allowing us to see the sunlight coming from the front of the building.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. The front."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The sunlight is coming from the left side of the image, as indicated by the shadows on the ground and the direction in which the people are walking.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "C. Uncertain."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"To determine the direction of the speedboat, we need to observe the orientation of the cranes and the position of the boat relative to them. Parts 1 and 2 provide a clear view of the cranes and the boat's position.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "B. In the opposite direction of the sun."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The sun is shining from the top left corner, illuminating the garden and creating shadows. The shadows are cast towards the bottom right, indicating the sun's position.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. Left rear"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the sky and the direction of the sunlight\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. From the right;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3\",\n  \"reason\": \"The window on the right is located in the upper right part of the image, which is the only part that shows a window. The other parts show doors and stairs, which are not relevant to the question.\"\n}",
+            "rst": [
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"1,2,4\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show the sky and trees, which can help determine the direction of sunlight\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "A. From the left;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The sky in the upper left and upper right parts of the image has a warm, orange hue, which is characteristic of either a sunrise or a sunset. The gradient from orange to blue in the sky suggests that the sun is low on the horizon, which is typical during sunrise or sunset. Therefore, it is reasonable to conclude that this is either a sunrise or a sunset.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. A sunset."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The image shows a street scene with vehicles and street signs, which can help determine the time of day. The upper left part shows the street view, the upper right part shows the street signs, the lower left part shows the street view with vehicles, and the lower right part shows the street view with bicycles.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "D. Afternoon."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The sunlight is coming from the left side of the image, as indicated by the shadows cast on the right side of the buildings and the people in the square. The parts 1 and 2 show the left side of the image where the sunlight is coming from.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "C. From above."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The stairs in all four parts are going upwards, as indicated by the direction of the steps.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. Upwards."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The wind direction can be inferred from the position of the kite relative to the wind. In the upper left and upper right parts, the kite is positioned towards the bottom of the frame, indicating that the wind is coming from the top of the frame.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "C. From the left;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the sunlight shining on the Great Wall and the surrounding mountains, indicating the direction of the sunlight.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. From the left;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the sky and trees, which can help determine the time of day.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1,2,3,4\", \"shift\": \"5\"}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. 10:00-14:00;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the exterior of the stadium, including the clock and the sky, which can help determine the time of day.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. Noon"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The man with the cane is facing towards the building in the upper left and lower left parts of the image.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. Left"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The person in the blue shirt with red stripe is facing towards the right side of the image, which is the direction of the Globolivros sign.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. Right;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The handle of the full cup is pointing to the left in the lowerright part of the image.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"4\", \"shift\": \"none\"}",
+            "rst": [
+                4
+            ],
+            "answer": "A. Left;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"To determine the direction of the blue car and the seagull\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "B. The opposite direction.."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"To check the direction of the heads of the two animals on the shore in the upperright and lowerright parts of the image.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the full view of the airport, including the direction of the airplane heads.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the sky and clouds, which can help determine the time of day.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. Afternoon.."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,3\",\n  \"reason\": \"The clock tower is visible in both the upper left and upper right parts of the image, indicating its position relative to the viewer.\"\n}",
+            "rst": [
+                1,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                4
+            ],
+            "answer": "A. East.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,3\",\n  \"reason\": \"These parts show the sky, which can help determine the direction of sunlight\"\n}",
+            "rst": [
+                1,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                4
+            ],
+            "answer": "C. From right front;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The images show the road layout and traffic signs, which can indicate the driving regulations. The road is divided by a median, and the traffic signs are visible, which can provide information about the driving direction.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Right;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The vehicles in the image are driving on the right side of the road, indicating that the regulations here likely require vehicles to drive on the right.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. Right;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the road layout and traffic direction, which can help determine the driving regulations.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"1,2,4,5\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "B. Left."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The ship in the bottom right part of the image is moving towards the bridge, as indicated by its position relative to the bridge and the direction of its movement.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. Moving away from the bridge."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The right most round box is in the lowerright part of the image.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. Brown;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show all the children wearing hats, allowing for a clear view of their attire.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. Yes."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show the people holding brooms, and their boots are visible.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "D. Yellow."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the bridge's railing, structure, and deck, which are essential for identifying the type of bridge.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Suspension Bridge"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"These parts show the bicycle's frame and wheels, which are necessary to determine if the bicycle is ridable.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"3\", \"shift\": \"2\"}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1\",\n  \"reason\": \"The clock tower in the upper left part of the image shows the time.\"\n}",
+            "rst": [
+                1
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "D. 3:45 p.m."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1\",\n  \"reason\": \"The clock tower in the upper left part of the image shows the time.\"\n}",
+            "rst": [
+                1
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "C. 4:15 p.m.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,3\",\n  \"reason\": \"These parts show the hand sanitizer and wet tissue packs with price tags, indicating they might be on discount.\"\n}",
+            "rst": [
+                1,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                4
+            ],
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The ship has a flag on top, which can be used to identify the country it belongs to.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "B. Netherland"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"The tent is set up on the sidewalk, which is a common location for homeless individuals to sleep. The presence of the tent suggests that it is being used as a shelter for sleeping or resting.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"2\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "A. Shelter for the homeless;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"none\",\n  \"reason\": \"The image does not provide any information about the car's WiFi connection status.\"\n}",
+            "rst": null,
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,3\",\n  \"reason\": \"The person holding the blue flag is also wearing a white uniform with medals and a hat in the upper left and upper right parts of the image.\"\n}",
+            "rst": [
+                1,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [],
+            "answer": "B. A fur hat"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,3\",\n  \"reason\": \"Part 1 shows the boat Luciole, and Part 3 shows the rope tied to the boat.\"\n}",
+            "rst": [
+                1,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                4
+            ],
+            "answer": "A. A rope;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1\",\n  \"reason\": \"The board is visible through the window of the blue car in the upper left part of the image.\"\n}",
+            "rst": [
+                1
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,3\",\n  \"reason\": \"The hole on the left side appears to be a natural cave or a man-made tunnel, which is likely used for storage or as a shelter. The surrounding rock and vegetation suggest that it is a natural feature, but it could also be a man-made structure for various purposes.\"\n}",
+            "rst": [
+                1,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                4
+            ],
+            "answer": "B. Entrance"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The road sign is visible on the right side of the image in the lowerright part.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "D. Construction warning sign."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,3\",\n  \"reason\": \"The registration number is visible on the rear of the plane, which is located in the upper left and lower left parts of the image.\"\n}",
+            "rst": [
+                1,
+                3
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1,
+                2
+            ],
+            "answer": "A. VH-VXG;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,4\",\n  \"reason\": \"The slippers worn by the woman are visible in these parts\"\n}",
+            "rst": [
+                2,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2, 3\",\n  \"shift\": \"1, 4\"\n}",
+            "rst": [
+                1,
+                2
+            ],
+            "answer": "D. Brown."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,4\",\n  \"reason\": \"Part 1 shows the container next to the broom, and Part 4 shows the person walking on the sidewalk, which is relevant to the question.\"\n}",
+            "rst": [
+                1,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                3
+            ],
+            "answer": "A. A bucket;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1\",\n  \"reason\": \"The character 'Ron' is written in black near the blue eye of the graffiti character in the upper left part of the image.\"\n}",
+            "rst": [
+                1
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2,3,4\"}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "C. All of the above."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2\",\n  \"reason\": \"The hand holding the stirrer is in the upperright part of the image, and the nail polish color can be seen clearly in this part.\"\n}",
+            "rst": [
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3,4\"\n}",
+            "rst": [
+                2,
+                3,
+                4
+            ],
+            "answer": "C. Purple;"
+        }
+    ],
+    [
+        {
+            "init": "```json\n{\n  \"part\": \"1\",\n  \"reason\": \"The battery percentage is visible on the phone in the upper left part of the image.\"\n}\n```",
+            "rst": null,
+            "answer": "B. 40%;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the mechanical system near the bells, including the pulleys and ropes, which are likely used to ring the bells.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "B. Bell ringing"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,3\",\n  \"reason\": \"The wall decoration with a face-like design is located in the upperright and lowerright parts of the image, which are the 3rd and 4th parts respectively.\"\n}",
+            "rst": [
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"2,4\"\n}",
+            "rst": [
+                3,
+                4
+            ],
+            "answer": "A. Red;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2\",\n  \"reason\": \"The boat with the third tallest mast is located in the upperright part of the image.\"\n}",
+            "rst": [
+                2
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"2\", \"shift\": \"3\"}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "B. White"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3\",\n  \"reason\": \"The third digit on the bib of the runner in front wearing a black hat is visible in this part of the image.\"\n}",
+            "rst": [
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"1,2,4\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "D. 3."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"none\",\n  \"reason\": \"There is no man on the shore in the provided image parts.\"\n}",
+            "rst": null,
+            "answer": "C. Black."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The tallest pole is located in the upper left and upper right parts of the image, and these parts show the pole clearly.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "A. White;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show the people below the helicopter, which can help determine if they are standing or not.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                4
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,3\",\n  \"reason\": \"The airplane has the words 'AIR KORYO' and the flag of North Korea on the tail, indicating that it is owned by Air Koryo, the national airline of North Korea.\"\n}",
+            "rst": [
+                1,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 3\",\n  \"shift\": \"2, 4\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "C. North Korea"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show the clock faces on the tower, which can be used to determine the current time.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. 7:55 p.m.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the sky and buildings, which can help determine the time of day.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2
+            ],
+            "answer": "B. Afternoon"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,3\",\n  \"reason\": \"The digital clock in the upper right part shows the time, and the platform in the lower left part shows the time as well.\"\n}",
+            "rst": [
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"1,2,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. Afternoon"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,3\",\n  \"reason\": \"The time of day can be inferred from the shadows and lighting in these parts of the image.\"\n}",
+            "rst": [
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                3,
+                4
+            ],
+            "answer": "B. Afternoon"
+        }
+    ],
+    [
+        {
+            "init": "```json\n{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The Instagram, Facebook, YouTube, and Twitter logos are closest to the blue background in their respective parts.\"\n}\n```",
+            "rst": null,
+            "answer": "B. The second logo.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The tallest building is located in the upper left part of the image, and the sky is visible in the upper left and upper right parts.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "D. Blue.."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,4\",\n  \"reason\": \"The taller person is in the upperright and lowerright parts of the image, and both parts show the person wearing gloves.\"\n}",
+            "rst": [
+                2,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "A. Yes.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The car's side mirror and steering wheel indicate it is a right-hand drive vehicle.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. Right-hand drive.."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the night view of the building, which can help determine the current time.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2
+            ],
+            "answer": "B. 7:10 p.m.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The door handle and side mirror are on the left side of the car, indicating it is a left-hand drive vehicle.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. Right-hand drive."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show the tallest building under construction, which can be identified by the cranes and the unfinished structure.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. No.."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,3\",\n  \"reason\": \"The max lifting height can be found in the upper left part of the image, which shows the capacity with vertical upright equipped as shown. The max lifting height for 960KG of goods is 1000MM.\"\n}",
+            "rst": [
+                1,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                4
+            ],
+            "answer": "A. 4000MM;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,3,4\",\n  \"reason\": \"These parts show the side, rear, and front views of the white SUV, which can help identify the brand.\"\n}",
+            "rst": [
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2, 3, 4\",\n  \"shift\": \"1\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. TOYOTA"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"The rightmost athlete is in the upperright and lowerright parts of the image.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"2\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "A. 11;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the street view and buildings, which can provide context for determining the time of day.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"1,2,4,5\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "C. 1:45 p.m.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"All parts show the security checkpoint equipment, including the metal detector, X-ray machine, and turnstiles. The equipment appears to be in place and ready for use.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 3, 4\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"To view the complete planet Jupiter in its entirety, including its various features and colors.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "{\"part\": \"1,2\", \"reason\": \"These parts show the bridge with the most visible cars\"}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "D. 2."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show the hands holding a burger and another burger on the table, indicating that at least one slice of bread has been made into a hamburger.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1,2\",\n  \"shift\": \"3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. 3;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"These parts show the soldiers wearing shawls.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "A. 2;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,3\",\n  \"reason\": \"These parts show the children wearing blue headbands clearly.\"\n}",
+            "rst": [
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"2\", \"shift\": \"3\"}",
+            "rst": [
+                2
+            ],
+            "answer": "A. 1;"
+        }
+    ],
+    [
+        {
+            "init": "```json\n{\n  \"part\": \"none\",\n  \"reason\": \"All the parts show Honda as the sponsor, so there is no non-sponsor part.\"\n}\n```",
+            "rst": null,
+            "answer": "A. CONDA;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3\",\n  \"reason\": \"The jerky is hanging on the wall in the upperright part of the image.\"\n}",
+            "rst": [
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"1,2,4\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "C. 5;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"To count the cacti in all four parts of the image.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "C. 6;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"To show the discounted items and their prices in the image.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. RM 38.00"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts contain the Doraemon figures, which are the main subject of the question.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "B. 3;"
+        }
+    ],
+    [
+        {
+            "init": "{\"part\": \"2,3,4\", \"reason\": \"These parts show more head figures facing to the right.\"}",
+            "rst": [
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3,4\"\n}",
+            "rst": [
+                2
+            ],
+            "answer": "A. Left;"
+        }
+    ],
+    [
+        {
+            "init": "{\"part\": \"3\", \"reason\": \"The jerky is placed on the wall in the upperright part of the image.\"}",
+            "rst": [
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"1,2,4\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "C. 0;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the square with the stone statues clearly.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1,2,3,4\", \"shift\": \"5\"}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "D. 3;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show the individuals wearing glasses\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. 2"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1\",\n  \"reason\": \"The person in the upper left corner is holding a camera, and there is no need to zoom in for this information.\"\n}",
+            "rst": [
+                1
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. 1;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3\",\n  \"reason\": \"The person sitting on the bench is clearly visible in this part of the image.\"\n}",
+            "rst": [
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"1,2,4\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. 1;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The person is visible on the grass in the lowerright part of the image.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. 1;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,3\",\n  \"reason\": \"The benches are visible in the lower left and lower right parts of the image.\"\n}",
+            "rst": [
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2, 3\",\n  \"shift\": \"1, 4\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. 1;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"These parts show a person walking on the grass and a person walking on the path, both engaged in moving activities.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "B. 2"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The tie is visible in the lowerright part of the image.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. 2;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"To count the different types of containers on the table, including the pitcher, glass, and cup.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 3, 4, 5\",\n  \"shift\": \"2\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. 3"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,3\",\n  \"reason\": \"The person in the lower left and the person in the upper right are wearing blue jeans.\"\n}",
+            "rst": [
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2
+            ],
+            "answer": "A. 1;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The person in the bottom right corner is wearing a watch on their left wrist.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. 1"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The people in the upper left and upper right parts of the image are wearing long sleeves.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1,2\", \"shift\": \"3,4\"}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "C. 3."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The person in the upper left and the person in the upper right are holding food containers.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "A. 2;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The individual in the bottom right corner is wearing a suit, as indicated by the brown jacket and tie.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. 2"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,3\",\n  \"reason\": \"These parts show people working at their desks, while the other parts do not provide clear views of desks or people working.\"\n}",
+            "rst": [
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2
+            ],
+            "answer": "C. 5;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,4\",\n  \"reason\": \"These parts show the office environment where people are seated on chairs, which is relevant to the question about the number of people seated.\"\n}",
+            "rst": [
+                2,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [],
+            "answer": "B. 1"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the album with different types of cakes.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"1,2,4,5\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "B. 2;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,3\",\n  \"reason\": \"These parts show the photo album with cakes decorated by flowers.\"\n}",
+            "rst": [
+                1,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [],
+            "answer": "B. 2"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,3\",\n  \"reason\": \"These parts show the person standing holding a bowl of popcorn, which is the main action in the scene.\"\n}",
+            "rst": [
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"2\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "B. 2;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3\",\n  \"reason\": \"These parts show people holding popcorn in their hands.\"\n}",
+            "rst": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1,3\",\n  \"shift\": \"2,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "C. 3"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,4\",\n  \"reason\": \"In part 1, there is a woman holding a box, and in part 4, there is a man holding a box.\"\n}",
+            "rst": [
+                1,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                2,
+                3
+            ],
+            "answer": "B. 2"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"All parts show individuals wearing seat belts, so zooming into all parts is necessary to confirm the details.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1,2,3,4\", \"shift\": \"none\"}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. 2;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"These parts show the water where the people are swimming.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                3
+            ],
+            "answer": "A. 1;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"All parts show the wheels of the Audi car.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 3, 4, 5\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. 3"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show the front of the cars facing the left.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "A. 3;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"To provide a comprehensive view of the image, including the person and the surrounding environment.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. 1"
+        }
+    ],
+    [
+        {
+            "init": "{\"part\": \"3,4\", \"reason\": \"These parts show the people climbing the slope.\"}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3,4\",\n  \"shift\": \"1,2\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. 2.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts contain the most relevant information to answer the question, including the real head of the person and the sculptured heads of the statues.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1\", \"shift\": \"2\"}",
+            "rst": [
+                1
+            ],
+            "answer": "A. 2;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts contain the 'Red Zhong' cards, which are the only cards with the character '\u4e2d' in red.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1,2,3,4\", \"shift\": \"5\"}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. 1;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the ceiling and floor levels, allowing for the determination of the number of floors.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "C. 3;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the water pipes in different angles and positions, providing a comprehensive view of the pipes.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 3, 4, 5\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. 4;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the truck from different angles, including the tires\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 3, 4, 5\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "C. 6;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts contain the umbrella figures in the image.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\"keep\": \"1,2,3,4\", \"shift\": \"5\"}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "C. 4;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the galaxy in detail, allowing for a clear count of the galaxies present.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. 1;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts contain the most detailed views of the galaxies, allowing for a clear count of the galaxies present.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "C. 2;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the spiral galaxy with the most star clusters visible, allowing for a detailed comparison.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "C. 2;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1, 2, 3, 4\",\n  \"reason\": \"These parts show the star clusters with clear rotating directions.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 3, 4\",\n  \"shift\": \"5\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "C. 2;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts contain the most visible star clusters.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. 4;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The image shows a display of handbags with a cityscape background, which is likely a store or showroom. The cityscape is consistent across all four parts, indicating that the display is in the same location.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. At shopping mall counters;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"To determine if the cross is an entrance or exit, we need to see the context of the cross in relation to the parking lot. Parts 1 and 2 provide a clear view of the cross and the parking lot entrance.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "A. Exit;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"none\",\n  \"reason\": \"The image shows a street scene with various signs and advertisements, which suggests that it is a commercial area. The activities most likely to take place here include shopping, dining, and leisure activities such as visiting restaurants and cafes. Therefore, the activity least likely to take place here is 'working' as it is not typically associated with a commercial street scene.\"\n}",
+            "rst": null,
+            "answer": "D. To buy a car."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The image shows various parts of a butcher shop, including the exterior with a pig sign, the interior with employees working, and the display case with meat products. The combination of these parts provides a comprehensive view of the shop's environment and offerings.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. A butchers shop;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The photo is taken in a museum or gallery, as indicated by the artwork on the walls and the roped-off area. The upper left and upper right parts show the artwork, while the lower left and lower right parts show the roped-off area with a pathway leading to a building, which is likely the main attraction of the museum or gallery.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. A gallery;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the interior of the shop, including various products and decorations, which can help determine the major type of product sold in the shop.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "D. Sweets."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3\",\n  \"reason\": \"The building on the right part of the image is a real building, which is the Great Hall of the People in Beijing, China. The building is located in the center of Tiananmen Square, and it is a famous landmark in China. The building is a large, rectangular structure with a dome on top, and it is made of red bricks and white marble. The building is surrounded by a large courtyard, and it is often used for important political events and ceremonies. The building is also known as the 'People's Hall' and it is the seat of the National People's Congress and the Chinese People's Political Consultative Conference. The building is a symbol of Chinese democracy and it is a popular tourist attraction. The building is also a symbol of Chinese culture and it is a popular tourist attraction. The building is also a symbol of Chinese history and it is a popular tourist attraction. The building is also a symbol of Chinese politics",
+            "rst": null,
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The image shows a small cabin with a mirror, a shelf with boxes, a cup, and a power outlet, which are typical features of a train or airplane cabin.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 3, 4\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. On a train;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The photo appears to be taken in a subway station with detailed artwork on the walls. The presence of escalators and signs with directions further supports this. The artwork and design are consistent across all four parts, indicating that the entire scene is part of the same location.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 3\",\n  \"shift\": \"2, 4, 5\"\n}",
+            "rst": [
+                1,
+                3
+            ],
+            "answer": "D. In a subway station."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1, 2, 3, 4\",\n  \"reason\": \"These parts show the different views of the mobile shelving system, which is a common feature in libraries or storage rooms.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 3, 4\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "D. A library."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The Yamaha Music School sign is located in the lowerright part of the image, which is the only part that contains information about the music school.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. Yes;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the kiosks and the floor, which are visible in all four parts of the image.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 4\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                1,
+                2,
+                4
+            ],
+            "answer": "B. An airport;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"These parts show the top of the hill with structures in the background.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "B. Churchs"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The image shows various furniture and decor items, including sofas, tables, and shelves, which are commonly found in furniture stores. The presence of price tags and product labels also suggests a retail environment.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 3, 4\",\n  \"shift\": \"5\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "C. In a home supplies store;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The image shows a person working with flowers, which suggests an outdoor environment, possibly a garden or park. The presence of a person wearing a high-visibility vest in part 4 indicates that this could be a professional setting, such as a landscaping or maintenance crew. The flowers in parts 1 and 3 are in a pot, which is typically used for outdoor plant arrangements.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 3, 4\",\n  \"shift\": \"5\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "D. Garden."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show various types of hats and clothing, indicating that the shop sells a variety of fashion items.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Hats;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts provide a comprehensive view of the train and its surroundings, including the train's details and the platform, which can help in identifying the location.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. At a train station;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The image shows a room with a wooden cabinet, scattered papers, and books, which suggests an indoor setting. The presence of Russian text on the papers and books indicates that the location is likely in a Russian-speaking region. The condition of the room, with papers and books scattered and the cabinet in disarray, suggests a neglected or abandoned space.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 3, 4\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. An abandoned room;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The Renault logo and the green wall with the words 'Passion for life' suggest that this picture is most likely taken at a Renault dealership or a car exhibition. The presence of the car with the doors open and the charging station further supports this.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. An automotive exhibition;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show a room with wooden furniture, shelves, and a brick wall, which are typical features of a traditional Chinese room. The presence of the air conditioner also suggests a modern touch, indicating that this room could be in a traditional Chinese building that has been adapted for modern use.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. A historical museum;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the Notre-Dame Cathedral in Paris, France, with its distinctive Gothic architecture and tourists in the foreground.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 3, 4\",\n  \"shift\": \"5\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. In an outdoor area;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the logo and the environment of the SY Shipping Corporation booth, indicating that the picture was most likely taken at a trade show or exhibition.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. At the exhibition of ships;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the interior of a building with a sign that reads 'Korean Traditional Culture Experience Center', indicating the location is likely a cultural center or museum dedicated to Korean traditions.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "C. In a shopping center."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show a large Ferris wheel, which is a common attraction in amusement parks. The presence of a blue bus and a white car also suggests a busy urban area. The combination of these elements indicates that the picture was most likely taken in an amusement park or a city with a large Ferris wheel.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 3, 4\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "A. Inside an amusement park;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the entire building with different colors and designs, providing a comprehensive view of the hotel's architecture.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. A hotel;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the intricate details of the temple's architecture, including the roof, walls, and decorations, which are characteristic of traditional Chinese temples.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 3, 4\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. A temple;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show a detailed view of the interior of a church or cathedral, including a large sculpture, stone walls, and a wooden bench, which are typical features of such places.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. A cathedral;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the cityscape and river at night, indicating that it is nighttime.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "C. Evening."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,3\",\n  \"reason\": \"The restaurant offers a variety of dishes, including grilled oysters and other seafood dishes, as indicated by the menu in the upper right part of the image. The presence of people enjoying their meals in the lower left and lower right parts of the image suggests that the cuisine is popular among customers.\"\n}",
+            "rst": [
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"4\"\n}",
+            "rst": [
+                3,
+                4
+            ],
+            "answer": "A. Chinese cuisine.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The child is visible in the upper left and lower left parts of the image, peeking around the door.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "A. Inside the room.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show various items inside the shop, including a frog statue, a chalkboard with ice cream images, and people entering the shop, suggesting that the shop sells a variety of items, possibly including souvenirs and snacks.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. Paper items.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"The weather appears to be clear and sunny, as indicated by the bright lighting and shadows in the images. The sky is visible in the upper left part of the image and appears to be blue, which is typically associated with clear weather.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "A. Sunny.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts provide a comprehensive view of the restaurant, including the exterior, signage, and the outdoor seating area with people. They collectively give a clear understanding of the restaurant's appearance and atmosphere.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 3, 4\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. It is a burger restaurant.;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The building next to the telephone booth is visible in the lowerright part of the image.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. A underground station.."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the interior of a cathedral with arches, benches, and a central aisle, which are characteristic features of such religious buildings.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 3, 4\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "C. A church.."
+        }
+    ],
+    [
+        {
+            "init": "none\nreason: The image does not contain a railway line.",
+            "rst": null,
+            "answer": "B. No.."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"3,4\",\n  \"reason\": \"These parts show the ice slide and the hot air balloon in the background, which is relevant to the question.\"\n}",
+            "rst": [
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"3\",\n  \"shift\": \"2\"\n}",
+            "rst": [
+                2,
+                3
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show a race course with people running, cones, and banners, indicating an outdoor event. The presence of trees and the outdoor setting further support this.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 3, 4\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "C. At a Marathon finish line."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2\",\n  \"reason\": \"The fast food restaurant is located in the upper left and upper right parts of the image, where there are signs with the logo of a fast food chain.\"\n}",
+            "rst": [
+                1,
+                2
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1,
+                3,
+                4
+            ],
+            "answer": "D. KFC."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show various types of artwork and decorative items, indicating that the store is likely an art gallery or a store specializing in decorative arts.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1, 2, 3, 4, 5\",\n  \"shift\": \"none\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. A antique Shop"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"2,3\",\n  \"reason\": \"The upper part shows the distance to different cities, while the lower part shows the current traffic conditions. The reason for selecting the lower part is that it provides information about the traffic conditions on the highway, which can help determine the time it will take to reach the destination. The reason for selecting the upper part is that it shows the distance to different cities, which can help determine the order in which the cities will be reached.\"\n}",
+            "rst": [
+                2,
+                3
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"3\"\n}",
+            "rst": [
+                2
+            ],
+            "answer": "D. Suzhou."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The lid of the taller bottle is visible in the lowerright part of the image.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"2\",\n  \"shift\": \"1,3,4\"\n}",
+            "rst": [
+                1,
+                3
+            ],
+            "answer": "B. On the table;"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the sunlight shining on the buildings and people, indicating the direction of the sunlight.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. From the right of the image."
+        }
+    ],
+    [
+        {
+            "init": "```json\n{\n  \"part\": \"1,2\",\n  \"reason\": \"The man in blue is standing on the balcony in the upper left part of the image, which is also visible in the upper right part.\"\n}\n```",
+            "rst": null,
+            "answer": "B. Second floor's"
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"4\",\n  \"reason\": \"The highway in the lower right part of the image has an exit ramp that leads directly to the riverbank, allowing a car to turn onto the riverbank.\"\n}",
+            "rst": [
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"4\",\n  \"shift\": \"1,2,3\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "answer": "B. No."
+        }
+    ],
+    [
+        {
+            "init": "{\n  \"part\": \"1,2,3,4\",\n  \"reason\": \"These parts show the dragon patterns on the wall, which are facing the same direction as the two women.\"\n}",
+            "rst": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "inter": "{\n  \"keep\": \"1\",\n  \"shift\": \"2,3,4,5\"\n}",
+            "rst": [
+                1
+            ],
+            "answer": "B. No."
+        }
+    ]
+]
