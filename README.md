@@ -4,11 +4,6 @@
 
 [**🌐 Homepage**](https://wangphoebe.github.io/actiview_homepage/)| [**📖 arXiv**](https://arxiv.org/pdf/2410.04659.pdf) 
 
-Coming soon ⏳🔜
-
-- 🚧 We will release our benchmark and evaluation toolkit ASAP.
-  
-- 📨 If you have any questions regarding the data and evaluation scripts when they are temporarily unavailable, please contact [w.ziyue1010@gmail.com](mailto:w.ziyue1010@gmail.com).
   
 ## Timeline
 
@@ -95,7 +90,7 @@ Please try:
 bash eval_script/run_qwen2vl_mix.sh 0,1,2,3 ../asset path_to_qwen2vl > qwen_mix.log 2>&1 &
 ```
 
-_These are temporal scripts and will be updated soon. If you find the scripts does not working properly, please raise issues in this repo._
+_ 🚧 These are temporal scripts and will be updated soon. If you find the scripts does not working properly, please raise issues in this repo._
 
 Sample outputs are provided in **results** dir.
 
