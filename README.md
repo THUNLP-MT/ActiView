@@ -3,7 +3,9 @@
 <p align="center"><img src="./figures/figure1.png" alt="Image" width=60% ></p>
 
 <div align="center">
-[**🌐 Homepage**](https://wangphoebe.github.io/actiview_homepage/)| [**📖 arXiv**](https://arxiv.org/pdf/2410.04659.pdf) 
+
+    [**🌐 Homepage**](https://wangphoebe.github.io/actiview_homepage/) | [**📖 arXiv**](https://arxiv.org/pdf/2410.04659.pdf) 
+
 </div>
 
   
