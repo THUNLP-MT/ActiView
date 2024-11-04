@@ -3,7 +3,7 @@
 <p align="center"><img src="./figures/figure1.png" alt="Image" width=60% ></p>
 
 <div align="center">
-    <a href="https://wangphoebe.github.io/actiview_homepage/">🌐<strong>Homepage</strong></a> | <a href="https://arxiv.org/abs/2410.04659">📖<strong>arXiv</strong></a>
+    <a href="https://wangphoebe.github.io/actiview_homepage/">🌐<strong>Homepage</strong></a> | <a href="https://arxiv.org/abs/2410.04659">📖<strong>arXiv</strong></a> | <a href="https://huggingface.co/datasets/wangphoebe/ActiView">🤗<strong>Dataset</strong></a>
 </div>
 
   
